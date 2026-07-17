@@ -20,13 +20,15 @@
   <p>This Privacy Policy explains what information Gobbl ("we," "the App") collects, how it's used, and your choices regarding that information.</p>
 
   <h2>1. Information We Collect</h2>
-  <p><strong>Account information:</strong> When you sign up, we collect your email address and any profile information you provide (username, profile photo, etc.), including through Google Sign-In.</p>
+  <p><strong>Account information:</strong> When you sign up, we collect your email address and any profile information you provide (username, profile photo, etc.), including through Google Sign-In or Sign in with Apple.</p>
   <p><strong>Meal data:</strong> When you log a meal, we store the meal details you enter, including photos you upload and the location you tag.</p>
   <p><strong>Location data:</strong> When you tag a location for a meal, we use Google Places API to look up and store the place (name, address, place ID, and coordinates) associated with that meal.</p>
-  <p><strong>Social data:</strong> If you use social features, we store your posts, comments, likes, friend connections, blocks, and any reports you submit.</p>
-  <p><strong>Photos:</strong> Photos you upload are stored securely and associated with your account.</p>
+  <p><strong>Social data:</strong> If you use social features, we store your posts, comments, likes, votes, friend connections, blocks, and any reports you submit.</p>
+  <p><strong>Photos:</strong> Photos you upload are stored securely and associated with your account. When you log a meal, the photo is also sent to our AI provider (see Section 3) to automatically identify the food, cuisine, and emoji shown on your log.</p>
   <p><strong>Home location (optional):</strong> You may optionally save a home location so that meals eaten at home appear on your Day Trail. Your exact home location is never shown to other users — friends only see a generic "Home" marker on your Day Trail, with no coordinates or address exposed.</p>
   <p><strong>Name and city (optional):</strong> At signup, you may optionally provide your first name, last name, and city.</p>
+  <p><strong>Sign in with Apple:</strong> If you sign up or log in using Sign in with Apple, we receive your name and email address (or Apple's private relay email, if you choose to hide your email) as provided by Apple.</p>
+  <p><strong>Push notification token:</strong> If you enable push notifications, we store a device push token (provided by Expo's push service) so we can deliver notifications about activity like likes, comments, and friend requests.</p>
 
   <h2>2. How We Use Your Information</h2>
   <p>We use the information above to:</p>
@@ -44,6 +46,9 @@
     <li><strong>Supabase</strong> — our backend provider, used for authentication, database storage, file storage (photos), and server-side functions. Supabase stores your account data, meals, posts, and photos on our behalf.</li>
     <li><strong>Google Places API</strong> — used to look up and display nearby locations when you tag a meal.</li>
     <li><strong>Google Sign-In</strong> — used as an optional way to create an account and log in.</li>
+    <li><strong>Sign in with Apple</strong> — used as an optional way to create an account and log in.</li>
+    <li><strong>Anthropic (Claude)</strong> — when you log a meal, we send the photo to Anthropic's Claude AI to automatically identify the food, cuisine, and emoji shown on your log. Anthropic processes this photo on our behalf to return that result and does not use it to train their models.</li>
+    <li><strong>Expo push notification service</strong> — used to deliver push notifications to your device (e.g., new likes, comments, or friend requests) using your device's push token.</li>
   </ul>
   <p>These services process data on our behalf and are bound by their own privacy and security practices.</p>
 
@@ -60,7 +65,7 @@
   <p>If you block another user, that user will no longer be able to see your content, and you will no longer see theirs, across the App. If you report content or a user, the report is stored and reviewed to enforce our Terms of Service.</p>
 
   <h2>6. Data Retention</h2>
-  <p>We retain your information for as long as your account is active. If you delete your account, we permanently delete your posts, meals, photos, comments, likes, friend connections, blocks, and reports tied to your account. This action is irreversible.</p>
+  <p>We retain your information for as long as your account is active. If you delete your account, we permanently delete your posts, meals, photos, comments, likes, votes, friend connections, blocks, reports, and push notification token tied to your account. This action is irreversible.</p>
   <p>If you can't access the App, you can request account deletion from our web page: <a href="https://ncoder-learner.github.io/gobbl-legal/delete-account.html">delete-account.html</a>.</p>
 
   <h2>7. Your Choices</h2>
