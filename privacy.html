@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 2026</p>
+  <p class="updated">Last updated: September 2026</p>
 
   <p>This Privacy Policy explains what information Gobbl ("we," "the App") collects, how it's used, and your choices regarding that information.</p>
 
@@ -27,6 +27,7 @@
   <p><strong>Photos:</strong> Photos you upload are stored securely and associated with your account. When you log a meal, the photo is also sent to our AI provider (see Section 3) to automatically identify the food, cuisine, and emoji shown on your log.</p>
   <p><strong>Home location (optional):</strong> You may optionally save a home location so that meals eaten at home appear on your Day Trail. Your exact home location is never shown to other users — friends only see a generic "Home" marker on your Day Trail, with no coordinates or address exposed.</p>
   <p><strong>Name and city (optional):</strong> At signup, you may optionally provide your first name, last name, and city.</p>
+  <p><strong>Diet and health preference data:</strong> If you use the App's diet and health features, we collect the primary goal you select (for example, build muscle, lean or deficit, keto, or maintenance), any dietary restrictions or preferences you set, and macro or calorie targets generated from your selections. We use logged meal data you've already provided to generate weekly summary insights, such as average sodium, calorie, or protein trends. If you connect Google Fit or Health Connect, we access the activity and health data you authorize through those platforms to inform your diet recommendations.</p>
   <p><strong>Sign in with Apple:</strong> If you sign up or log in using Sign in with Apple, we receive your name and email address (or Apple's private relay email, if you choose to hide your email) as provided by Apple.</p>
   <p><strong>Push notification token:</strong> If you enable push notifications, we store a device push token (provided by Expo's push service) so we can deliver notifications about activity like likes, comments, and friend requests.</p>
 
@@ -35,6 +36,7 @@
   <ul>
     <li>Operate core App features (logging meals, tagging locations, posting to friends)</li>
     <li>Show nearby places when you're logging a meal</li>
+    <li>Generate diet and health insights and recommendations based on the goals and data you provide</li>
     <li>Enforce our Terms of Service, including reviewing reports and blocking abusive users</li>
     <li>Improve and maintain the App</li>
   </ul>
@@ -43,11 +45,12 @@
   <h2>3. Third-Party Services</h2>
   <p>Gobbl relies on the following third-party services to operate:</p>
   <ul>
-    <li><strong>Supabase</strong> — our backend provider, used for authentication, database storage, file storage (photos), and server-side functions. Supabase stores your account data, meals, posts, and photos on our behalf.</li>
+    <li><strong>Supabase</strong> — our backend provider, used for authentication, database storage, file storage (photos), and server-side functions. Supabase stores your account data, meals, posts, photos, and diet/health preference data on our behalf.</li>
     <li><strong>Google Places API</strong> — used to look up and display nearby locations when you tag a meal.</li>
     <li><strong>Google Sign-In</strong> — used as an optional way to create an account and log in.</li>
     <li><strong>Sign in with Apple</strong> — used as an optional way to create an account and log in.</li>
     <li><strong>Anthropic (Claude)</strong> — when you log a meal, we send the photo to Anthropic's Claude AI to automatically identify the food, cuisine, and emoji shown on your log. Anthropic processes this photo on our behalf to return that result and does not use it to train their models.</li>
+    <li><strong>Google Fit / Health Connect</strong> — if you choose to connect these, we access the activity and health data you authorize to inform diet recommendations shown in the App. You can disconnect at any time in your device or platform settings.</li>
     <li><strong>Expo push notification service</strong> — used to deliver push notifications to your device (e.g., new likes, comments, or friend requests) using your device's push token.</li>
   </ul>
   <p>These services process data on our behalf and are bound by their own privacy and security practices.</p>
@@ -55,7 +58,7 @@
   <h2>4. Data Sharing</h2>
   <p>We share your information only:</p>
   <ul>
-    <li>With other Gobbl users, as intended by the App's social features (e.g., friends can see your posts, tier list, and profile, subject to your privacy/blocking settings)</li>
+    <li>With other Gobbl users, as intended by the App's social features (e.g., friends can see your posts, tier list, and profile, subject to your privacy/blocking settings). Diet and health preference data is private to your account and is not shared with other users unless you explicitly choose to share a diet through the App's diet-sharing feature.</li>
     <li>With service providers listed above, solely to operate the App</li>
     <li>If required by law</li>
   </ul>
@@ -65,27 +68,32 @@
   <p>If you block another user, that user will no longer be able to see your content, and you will no longer see theirs, across the App. If you report content or a user, the report is stored and reviewed to enforce our Terms of Service.</p>
 
   <h2>6. Data Retention</h2>
-  <p>We retain your information for as long as your account is active. If you delete your account, we permanently delete your posts, meals, photos, comments, likes, votes, friend connections, blocks, reports, and push notification token tied to your account. This action is irreversible.</p>
+  <p>We retain your information for as long as your account is active. If you delete your account, we permanently delete your posts, meals, photos, comments, likes, votes, friend connections, blocks, reports, diet and health preference data, and push notification token tied to your account. This action is irreversible.</p>
   <p>If you can't access the App, you can request account deletion from our web page: <a href="https://ncoder-learner.github.io/gobbl-legal/delete-account.html">delete-account.html</a>.</p>
 
   <h2>7. Your Choices</h2>
   <p>You can:</p>
   <ul>
     <li>Edit your profile information at any time within the App</li>
+    <li>Change or clear your diet and health preferences at any time within the App</li>
+    <li>Disconnect Google Fit or Health Connect at any time in your device or platform settings</li>
     <li>Block or report other users</li>
     <li>Delete your account at any time, which permanently deletes your data as described above</li>
   </ul>
 
-  <h2>8. Children's Privacy</h2>
+  <h2>8. Diet and Health Information Disclaimer</h2>
+  <p>Diet and health features in the App are informational only and are not medical advice. Gobbl is not a substitute for consultation with a doctor, dietitian, or other qualified health professional. Any goals, targets, or insights shown in the App are generated from the information you provide and general reference data, not a personalized medical assessment. You should consult a healthcare professional before starting any restrictive diet or making significant changes to your diet or exercise habits, especially if you have an existing medical condition.</p>
+
+  <h2>9. Children's Privacy</h2>
   <p>Gobbl is not directed at children under 13. If we learn we have collected personal information from a child under 13, we will delete it.</p>
 
-  <h2>9. Security</h2>
+  <h2>10. Security</h2>
   <p>We take reasonable measures to protect your information, including database-level access controls (row-level security) that restrict who can view or modify your data. No method of storage or transmission is 100% secure.</p>
 
-  <h2>10. Changes to This Policy</h2>
+  <h2>11. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. Continued use of the App after changes are posted constitutes acceptance of the updated policy.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Questions about this Privacy Policy can be directed to: <strong>gobbldevofficial@gmail.com</strong></p>
 
   <p><a href="index.html">&larr; Back</a></p>
